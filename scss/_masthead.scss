@@ -1,7 +1,7 @@
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
+  padding-top: calc(7rem + 60px);
   padding-bottom: 7rem;
   background: linear-gradient(0deg, $secondary 0%, $primary 100%);
   background-repeat: no-repeat;
@@ -13,9 +13,24 @@ header.masthead {
     position: relative;
     .masthead-heading {
       font-size: 4rem;
+      img {
+          max-width: 100%;
+          margin-top: 10%;
+      }
     }
     .masthead-subheading {
+      img {
+        max-width: 250px;
+      }
+    }
+    .masthead-detail  {
       font-size: 2rem;
+      font-size: 25px;
+      text-align: left!important;
+      margin-top: 15%;
+      .masthead-icon {
+        text-align: right!important;
+      }
     }
   }
   .bg-circle {
@@ -50,7 +65,7 @@ header.masthead {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: #{$tablet-width}) {
   header.masthead {
     padding-top: calc(10rem + 55px);
     padding-bottom: 10rem;
@@ -60,6 +75,12 @@ header.masthead {
       }
       .masthead-subheading {
         font-size: 4rem;
+        text-align: left!important;
+        margin-left: 24px;
+      }
+      .masthead-detail {
+        margin-top: auto;
+        margin-bottom: auto;
       }
     }
   }

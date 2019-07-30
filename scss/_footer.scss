@@ -1,0 +1,54 @@
+@mixin gradient-background-footer(){
+  background: darken($primary, 20%);
+  background: -moz-linear-gradient(45deg, darken($primary, 20%) 0%, $black 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, darken($primary, 20%)), color-stop(100%, $black));
+  background: -webkit-linear-gradient(45deg, darken($primary, 20%) 0%, $black 100%);
+  background: -o-linear-gradient(45deg, darken($primary, 20%) 0%, $black 100%);
+  background: -ms-linear-gradient(45deg, darken($primary, 20%) 0%, $black 100%);
+  background: linear-gradient(45deg, darken($primary, 20%) 0%, $black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($primary, 20%)', endColorstr='$black', GradientType=1 );
+}
+
+.footer {
+    @include gradient-background-footer();
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: white;
+    h6 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .footer-col {
+        margin-bottom: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    strong {
+        font-weight: 900;
+    }
+}
+
+.footer-social a {
+    color: $secondary;
+    background: transparent;
+    width: 40px;
+    display: inline-table;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        text-decoration: none;
+    };
+}
+
+.footer-copyrigth {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    text-align: center;
+}
