@@ -14,8 +14,8 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #ee0979 !default;
-$secondary: #ff6a00 !default;
+$primary: #a33cbb !default;
+$secondary: #fcb800 !default;
 
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -28,12 +28,12 @@ $desktop-width: 1024px;
 }
 
 @mixin gradient-background(){
-  background: #753d85;
-  background: -moz-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #753d85), color-stop(40%, #e24c58));
-  background: -webkit-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -o-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -ms-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753d85', endColorstr='#e24c58', GradientType=1 );
+  background: $primary;
+  background: -moz-linear-gradient(45deg, $primary 0%, $secondary 50%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, $primary), color-stop(50%, $secondary));
+  background: -webkit-linear-gradient(45deg, $primary 0%, $secondary 50%);
+  background: -o-linear-gradient(45deg, $primary 0%, $secondary 50%);
+  background: -ms-linear-gradient(45deg, $primary 0%, $secondary 50%);
+  background: linear-gradient(45deg, $primary 0%, $secondary 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='$secondary', GradientType=1 );
 }
