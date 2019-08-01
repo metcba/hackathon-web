@@ -23,6 +23,34 @@ h6 {
 .rounded-pill {
   border-radius: 5rem; }
 
+/* Section styles */
+.section-text {
+  padding: 2rem !important; }
+
+.section-img {
+  padding: 1.5rem !important; }
+
+@media (min-width: 768px) {
+  .section-text {
+    padding: 3rem !important; }
+    .section-text h2 {
+      font-size: 3em;
+      line-height: 1.2; }
+
+  .section-img {
+    padding: 3rem !important; } }
+/* Schedule styles */
+.schedule-line {
+  line-height: 40px; }
+  .schedule-line .schedule-hour {
+    padding-right: 0px;
+    text-align: right !important;
+    color: #868e96;
+    font-size: 1.2em;
+    font-weight: 600; }
+  .schedule-line p {
+    margin-bottom: 0.25rem; }
+
 .footer {
   background: #8c0547;
   background: -moz-linear-gradient(45deg, #8c0547 0%, #000 100%);
@@ -193,30 +221,5 @@ header.masthead {
     border-color: #cc5500 !important; }
   .btn-secondary:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5); }
-
-/* Section styles */
-.section-text {
-  padding: 2rem !important; }
-
-.section-img {
-  padding: 1.5rem !important; }
-
-@media (min-width: 768px) {
-  .section-text {
-    padding: 3rem !important; }
-    .section-text h2 {
-      font-size: 3em;
-      line-height: 1.2; }
-
-  .section-img {
-    padding: 3rem !important; } }
-/* Schedule styles */
-.schedule-line {
-  line-height: 40px; }
-  .schedule-line .schedule-hour {
-    padding-right: 0px;
-    text-align: right !important;
-    color: #868e96;
-    font-size: 1.2em; }
 
 /*# sourceMappingURL=one-page-wonder.css.map */

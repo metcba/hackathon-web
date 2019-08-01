@@ -37,37 +37,3 @@
     box-shadow: 0 0 0 0.2rem fade-out($secondary, 0.5);
   }
 }
-
-/* Section styles */
-.section-text {
-  padding: 2rem!important;
-}
-
-.section-img {
-  padding: 1.5rem!important;
-}
-
-@media (min-width: #{$tablet-width}) {
-  .section-text {
-    padding: 3rem!important;
-    h2 {
-      font-size: 3em;
-      line-height: 1.2;
-    }
-  }
-  .section-img {
-    padding: 3rem!important;
-  }
-}
-
-/* Schedule styles */
-
-.schedule-line {
-  line-height: 40px;
-  .schedule-hour {
-    padding-right: 0px;
-    text-align: right!important;
-    color: $gray-600;
-    font-size: 1.2em;
-  }
-}
