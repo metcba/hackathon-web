@@ -12,7 +12,7 @@ h6 {
 }
 
 h2 {
-  color: $primary;
+  color: darken($primary, 20%);
 }
 
 .btn-xl {
@@ -34,6 +34,11 @@ h2 {
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.block {
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 /* Section styles */
@@ -102,3 +107,27 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Projects section */
+
+.project {
+  background-color: white;/*lighten($secondary, 45%);*/
+  height: 15rem;
+  position: relative;
+  align-items: center;
+  display: flex;
+  .project-icon {
+    color: rgba($secondary, .2);
+    float: left;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  .project-content {
+    display: float;
+    margin: 3rem;
+    z-index: 100;
+    h3 {
+      color: $secondary;
+    }
+  }
+}

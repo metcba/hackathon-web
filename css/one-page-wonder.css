@@ -11,7 +11,7 @@ h6 {
   font-weight: 800 !important; }
 
 h2 {
-  color: #a33cbb; }
+  color: #60236e; }
 
 .btn-xl {
   text-transform: uppercase;
@@ -29,6 +29,10 @@ h2 {
 section {
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.block {
+  padding: 20px;
+  margin-bottom: 30px; }
 
 /* Section styles */
 .section-text {
@@ -79,6 +83,27 @@ section {
   margin-bottom: 2rem; }
   .team-member-desc h4 {
     margin-bottom: 0px; }
+
+/* Projects section */
+.project {
+  background-color: white;
+  /*lighten($secondary, 45%);*/
+  height: 15rem;
+  position: relative;
+  align-items: center;
+  display: flex; }
+  .project .project-icon {
+    color: rgba(252, 184, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .project .project-content {
+    display: float;
+    margin: 3rem;
+    z-index: 100; }
+    .project .project-content h3 {
+      color: #fcb800; }
 
 .footer {
   background: #60236e;
